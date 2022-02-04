@@ -8,10 +8,10 @@ import java.util.Scanner;
 public class Ficha2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		System.out.println("Triângulo: " + areaTriang (5, 3) );
-		System.out.println("Rectângulo: " + areaRect(5, 3) );
+		System.out.println("Rectângulo: " + areaRetang(5, 3) );
 		System.out.println("Cal: " + areaCal(5, 3, 0) );
 		System.out.println("Factorial: " + factor(5) );
 		System.out.println("Factorial rec: " + factorRecursivo(5) );
@@ -34,7 +34,7 @@ public class Ficha2 {
 		
 	}
 	
-	public static double areaRect (double aAltura, double aComp)
+	public static double areaRetang (double aAltura, double aComp)
 	{
 		// função chamada areaRetang que recebe dois argumentos (altura e comprimento) e retorna a área do retângulo
 		double area = aAltura * aComp;
@@ -50,7 +50,7 @@ public class Ficha2 {
 			return areaTriang(aX, aY);
 		}
 		else {
-			return areaRect(aX, aY);
+			return areaRetang(aX, aY);
 		}
 		
 	}
