@@ -1,3 +1,3 @@
-module Ficha2 {
-
+module fichasdeexercicios {
+	exports fichasLaboratorio;
 }
