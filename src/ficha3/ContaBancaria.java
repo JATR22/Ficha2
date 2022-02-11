@@ -15,6 +15,29 @@ public class ContaBancaria {
 		this.titular = titular;
 		
 	}
+	
+	public String getInformacaoConta() {
+		
+		return this.toString();
+		
+	}
+	
+	public void depositar(double aValor) {
+		
+		saldo = saldo + aValor;				// 'saldo += aValor' or 'saldo = saldo + aValor'
+	}
+	
+	public boolean levantar(double aValor ) {
+		
+		if ((saldo - aValor) >= 0)
+		{
+			saldo = saldo + aValor;			// 'saldo += aValor' or 'saldo = saldo + aValor'
+			return true;
+		}
+		else return false;
+		}
+	
+	
 
 	public double getSaldo() {
 		return saldo;
@@ -31,5 +54,8 @@ public class ContaBancaria {
 	public Date getDataAbertura() {
 		return dataAbertura;
 	}
+	
+	
+	
 
 }
