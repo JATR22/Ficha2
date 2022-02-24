@@ -5,36 +5,27 @@ import java.util.List;
 
 public class Banco {
 
-	private String nome;
-	private List<ContaBancaria> contasBancarias;
-//	private List<Casa> casas;
+	private static String nome;
+	private static List<ContaBancaria> contasBancarias;
+	private List<Casa> casas;	// Atributo 'Lista de Casas' Ex 4. 
 	
-	/**
-	 * Construtor do banco
-	 * @param nome - nome do banco
-	 */
+
+// Construtor do Banco, que recebe o nome e inicializa o Array para cem itens. 
 	public Banco(String nome) {
 		super();
-		this.nome = nome;
+		Banco.nome = nome;
 		contasBancarias = new ArrayList<ContaBancaria>(100);
 //		casas = new ArrayList<Casa>();
 	}
 	
-	/**
-	 * Cria uma conta
-	 * @param conta conta a ser criada
-	 */
-	public void criaConta (ContaBancaria conta)
+// Método criaConta que recebe uma conta bancária por parâmetro e acrescenta-a ao Array.	
+	public static void criaConta (ContaBancaria conta)
 	{
 		contasBancarias.add(conta);
 	}
 	
-	/**
-	 * 
-	 * @param titular - titular da conta
-	 * @return retorna a conta bancária
-	 */
-	public ContaBancaria getConta (String titular)
+// Método getConta que recebe o titular por parâmetro e devolve a conta desse titular.
+	public static ContaBancaria getConta (String titular)
 	{
 		for (ContaBancaria conta : contasBancarias)
 		{
@@ -46,71 +37,59 @@ public class Banco {
 		return null;
 	}
 	
-	/**
-	 * 
-	 * @return array de contas bancárias
-	 */
+	
 	public List<ContaBancaria> getContas ()
 	{
 		return contasBancarias;
 	}
 	
-	/**
-	 * 
-	 * @param contas - array de contas bancárias
-	 */
+	
 	public void setContas (List<ContaBancaria> contas)
 	{
-		this.contasBancarias = contas;
+		Banco.contasBancarias = contas;
 	}
 	
-	/**
-	 * 
-	 * @return nome do banco
-	 */
-	public String getNome() {
+
+	// Retorna o nome do banco...
+	public static String getNome() {
 		return nome;
 	}
 	
-	/**
-	 * Adiciona uma casa à lista de casas do banco
-	 * @param casa a ser adicionada
-	 */
-//	public void addCasa (Casa casa)
-//	{
-//		casas.add(casa);
-//	}
 	
-	/**
-	 * 
-	 * @param morada -> morada da casa a procurar
-	 * @return retorna a casa pela morada
-	 */
-//	public Casa getCasaByMorada (String morada)
-//	{
-//		for (Casa casa : casas)
-//		{
-//			if (casa.getMorada().equals(morada))
-//			{
-//				return casa;
-//			}
-//		}
-//		return null;
-//	}
+	// Função para adicionar uma nova casa, à lista de casas do banco.	Ex. 4
+	public void addCasa (Casa casa)
+	{
+		casas.add(casa);
+	}
 	
-	/**
-	 * Remove uma casa pela morada
-	 * @param morada -> morada da casa a remover
-	 * @return verdade se removeu, senão falso
-	 */
-//	public boolean remCasaByMorada (String morada)
-//	{
-//		if (getCasaByMorada(morada)!= null)
-//		{
-//			casas.remove(casas.indexOf(getCasaByMorada(morada)));
-//			return true;
-//		}
-//		return false;
-//	}
+
+	// Função que recebe a morada de uma casa / Retorna a casa pela morada
+	// Ex. 4
+	
+	public Casa getCasaByMorada (String morada)
+	{
+		for (Casa casa : casas)
+		{
+			if (casa.getMorada().equals(morada))
+			{
+				return casa;
+			}
+		}
+		return null;
+	}
+	
+
+	// Função que remove a casa, através da morada, da lista de casas do Banco
+	// Ex. 4
+	
+	public boolean remCasaByMorada (String morada)
+	{
+		if (getCasaByMorada(morada)!= null)
+		{
+			casas.remove(casas.indexOf(getCasaByMorada(morada)));
+			return true;
+		}
+		return false;
+	}
 	
 }

@@ -12,7 +12,9 @@ public class ContaBancaria {
 	private Date dataAbertura;
 	
 	
-			
+	// Construtor de instância da classe que recebe por parâmetro o nome do titular,
+	// e cria uma conta bancária para o mesmo... Na data de hoje, com o saldo 0 (zero).
+	
 	public ContaBancaria (String titular) {
 		super();
 		this.titular = titular;
@@ -21,6 +23,7 @@ public class ContaBancaria {
 		
 	}
 	
+	// Método getInformaçãoConta
 	public String getInformacaoConta() {
 		
 		return this.toString();
@@ -38,11 +41,14 @@ public class ContaBancaria {
 	}
 	
 	
+	// Método depositar
 	public void depositar(double aValor) {
 		
 		saldo = saldo + aValor;				// 'saldo += aValor' or 'saldo = saldo + aValor'
 	}
 	
+	
+	// Método levantar
 	public boolean levantar(double aValor ) {
 		
 		if ((saldo - aValor) >= 0)
@@ -54,7 +60,7 @@ public class ContaBancaria {
 		}
 	
 	
-
+	// GETTERS & SETTERS
 	public double getSaldo() {
 		return saldo;
 	}
