@@ -31,7 +31,9 @@ public class Casa {
 	 
 	 public String toString ()
 	 {
-		 return "Morada: " + morada + " | Preço de custo: " + precoCusto + " | Preço de venda: " + precoVenda + " | Lucro: " + getLucro() + " | % margem de lucro: " + getPercentMargemLucro();
+		 return "Morada: " + morada + " | Preço de custo: " + precoCusto + 
+				 " | Preço de venda: " + precoVenda + " | Lucro: " + getLucro() + 
+				 " | % margem de lucro: " + getPercentMargemLucro();
 	 }
 	
 	// GETTERS & SETTERS

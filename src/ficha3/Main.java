@@ -84,6 +84,8 @@ public class Main {
 				System.out.println(Banco.getConta(titular).getInformacaoConta()); } 
 		
 			while (ok);
+		
+
 		 
 		sc.close();
 		
