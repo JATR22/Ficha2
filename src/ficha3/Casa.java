@@ -8,12 +8,12 @@ public class Casa {
 	
 	// Construtor da instância da classe...
 	public Casa() {
-		super();
+		
 	}
 	
 	// Construtor que recebe a morada da casa e cria a casa, com a mesma morada...
 	public Casa(String morada) {
-		super();
+		
 		this.morada = morada;
 	}
 

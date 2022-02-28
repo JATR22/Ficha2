@@ -12,7 +12,7 @@ public class Banco {
 
 // Construtor do Banco, que recebe o nome e inicializa o Array para cem itens. 
 	public Banco(String nome) {
-		super();
+		
 		Banco.nome = nome;
 		contasBancarias = new ArrayList<ContaBancaria>(100);
 //		casas = new ArrayList<Casa>();

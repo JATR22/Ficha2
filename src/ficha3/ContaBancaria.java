@@ -16,7 +16,7 @@ public class ContaBancaria {
 	// e cria uma conta bancária para o mesmo... Na data de hoje, com o saldo 0 (zero).
 	
 	public ContaBancaria (String titular) {
-		super();
+		
 		this.titular = titular;
 		saldo = 0.0;
 		dataAbertura =  new Date();
@@ -26,19 +26,13 @@ public class ContaBancaria {
 	// Método getInformaçãoConta
 	public String getInformacaoConta() {
 		
-		return this.toString();
-		
-	}
-	
-	public String toString ()
-	{
 		DateFormat df = new SimpleDateFormat("dd/MM/YYYY");
 		DecimalFormat decF = new DecimalFormat("0.00");
-		Date date = new Date();
 		
 		return "Titular: " + titular + "| Saldo: €" + decF.format(saldo) +
-				"| Data Abertura: " + df.format(date);
+				"| Data Abertura: " + df.format(dataAbertura);
 	}
+	
 	
 	
 	// Método depositar
