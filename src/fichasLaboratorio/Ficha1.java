@@ -1,6 +1,6 @@
-package laboratorioProgramming;
+package fichasLaboratorio;
 
-public class Ficha_1 {
+public class Ficha1 {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World!");// Display the string.}
