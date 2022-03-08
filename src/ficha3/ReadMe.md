@@ -6,7 +6,7 @@ __Exercício 5__
 
 __Diagrama de Classes__
 
-![name-of-you-image](https://github.com/JATR22/FichasLaboratorio/blob/main/src/ficha3/UML%20Ficha%203.png?raw=true)
+![name-of-your-image](https://github.com/JATR22/FichasLaboratorio/blob/main/src/ficha3/UML%20Ficha%203.png?raw=true)
 
 
 
