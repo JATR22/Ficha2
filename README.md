@@ -1,1 +1,1 @@
-## Fichas de Laboratório de Programação
+## Fichas Laboratório de Programação
