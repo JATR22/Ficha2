@@ -1,5 +1,5 @@
 package projetoExtra;
 
-public class TipoAplicacao {
+public class AplicacaoTipo {
 
 }
