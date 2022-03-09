@@ -1,5 +1,7 @@
 package projetoExtra;
 
-public class AplicacaoTipo {
-
+public enum AplicacaoTipo {
+	GAMES, BUSINESS, EDUCATION, LIFESTYLE,
+	ENTERTAINMENT, UTILITIES, TRAVEL,
+	HEALTH_AND_FITNESS
 }
