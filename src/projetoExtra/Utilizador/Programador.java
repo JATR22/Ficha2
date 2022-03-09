@@ -1,5 +1,5 @@
 package projetoExtra.Utilizador;
 
-public class Programador {
+public class Programador extends Utilizador {
 
 }
