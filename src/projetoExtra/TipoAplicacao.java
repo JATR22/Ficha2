@@ -1,4 +1,4 @@
-package projetoExtra.AppStore;
+package projetoExtra;
 
 public class TipoAplicacao {
 
