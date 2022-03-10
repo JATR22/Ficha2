@@ -1,6 +1,8 @@
 package projetoExtra;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 
 import projetoExtra.Utilizador.Programador;
 
@@ -43,6 +45,86 @@ public class Aplicacao
 	
 	 private void recalcularAvaliacao()
 	{
+		 Collection<Avaliacao> values = mapaAvaliacoes.values();
+		 
+		 float sum = 0;
+		 
+		 for (Avaliacao avaliacao : values)
+		 {
+			 sum += avaliacao.getClassificacao();
+		 }
+		 
+		 avaliacao = sum / mapaAvaliacoes.keySet().size();
 	
+	}
+	 
+	 public void adicionarVenda()
+	 {
+		 numeroVendas++;
+	 }
+	 
+	 public List<Avaliacao> listarAvaliacoes()
+	 {
+		 return mapaAvaliacoes.values().stream().toList(); 
+	 }
+	 
+/*	 @Override
+	    public String toString() {
+	        return "Aplicacao{" +
+	                "tipo=" + tipo +
+	                ", nome='" + nome +
+	                ", preco=" + preco +
+	                ", classificacao=" + avaliacao +
+	                '}'; */
+	 
+	   
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	public float getAvaliacao() {
+		return avaliacao;
+	}
+
+	public void setAvaliacao(float avaliacao) {
+		this.avaliacao = avaliacao;
+	}
+
+	public AplicacaoTipo getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(AplicacaoTipo tipo) {
+		this.tipo = tipo;
+	}
+
+	public Programador getProgramador() {
+		return programador;
+	}
+
+	public void setProgramador(Programador programador) {
+		this.programador = programador;
+	}
+
+	public int getNumeroVendas() {
+		return numeroVendas;
+	}
+
+	public void setNumeroVendas(int numeroVendas) {
+		this.numeroVendas = numeroVendas;
+	}
+	  
 
 }
