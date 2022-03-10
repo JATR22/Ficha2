@@ -2,7 +2,6 @@ package projetoExtra;
 
 import java.util.HashMap;
 
-import laboratorio_ProjetoExtra_Ligia.Avaliacao;
 import projetoExtra.Utilizador.Programador;
 
 public class Aplicacao 
@@ -35,14 +34,15 @@ public class Aplicacao
 		programador.recalcularAvaliacao();
 	}
 	
-	 public void avaliar(int utilizadorId, float classificacao, String comentario) {
+	 public void avaliar(int utilizadorId, float classificacao, String comentario) 
+	 {
 	        mapaAvaliacoes.put(utilizadorId, new Avaliacao(classificacao, comentario));
 	        recalcularAvaliacao();
 	        programador.recalcularAvaliacao();
 	 }
 	
-//	private void recalcularAvaliacao()
-//	{
+	 private void recalcularAvaliacao()
+	{
 	
 
 }
