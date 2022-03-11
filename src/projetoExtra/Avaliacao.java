@@ -17,13 +17,14 @@ public class Avaliacao
 		this.classificacao = classificacao;
     }
 	
-/*	@Override
+	@Override
 	public String toString() 
 	{
 		return "Avaliacao{" +
 				"classificacao=" + classificacao +
 				", comentario='" + comentario + '\'' +
-				'}'; */
+				'}'; 
+	}
 	
 	public float getClassificacao() {
 		return classificacao;

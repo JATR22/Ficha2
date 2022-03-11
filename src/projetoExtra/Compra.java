@@ -12,7 +12,7 @@ public class Compra
 	private List <Aplicacao> aplicacoes;
 	private Cliente cliente;
 	
-	public Compra(Date date, double preco, List<Aplicacao> aplicacoes, Cliente cliente) 
+	public Compra(Cliente cliente, List<Aplicacao> aplicacoes) 
 	{
 		this.date = new Date();
 		this.preco = aplicacoes.stream().mapToDouble(Aplicacao::getPreco).sum();
@@ -21,11 +21,11 @@ public class Compra
 		this.cliente = cliente;
 	}
 
-/*	@Override
+	@Override
 	public String toString() {
 		return "Compra {date=" + date + ", preco=" + preco + ", aplicacoes=" + aplicacoes + ", cliente=" + cliente
 				+ "}"; 
-	} */
+	} 
 
 	public double getPreco() {
 		return preco;

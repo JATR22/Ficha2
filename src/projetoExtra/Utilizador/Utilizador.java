@@ -11,12 +11,12 @@ public class Utilizador {
 	protected String nome;
 	protected int idade; */
 	
-	public Utilizador(String nome, int idade, int id) {
+	public Utilizador(String nome, int idade) {
 		num++;
 		id = num;
 		this.nome = nome;
 		this.idade = idade;
-		this.id = id;
+	
 	}
 
 	public String getNome() {
@@ -43,13 +43,14 @@ public class Utilizador {
 		this.id = id;
 	}
 	
-/*	 @Override
+	 @Override
 	    public String toString() {
 	        return getClass().getSimpleName() + " {" +
 	                "id=" + id +
 	                ", nome='" + nome + '\'' +
 	                ", idade=" + idade +
 	                '}';
-	*/
+	 }
+	
 	
 }

@@ -11,9 +11,9 @@ public class Cliente extends Utilizador
 	private List<Compra> compras;
 	
 	
-	public Cliente(String nome, int idade, int id, List<Compra> compras) 
+	public Cliente(String nome, int idade) 
 	{
-		super(nome, idade, id);
+		super(nome, idade);
 		this.compras = new ArrayList<>();
 	}
 

@@ -14,19 +14,19 @@ public class Programador extends Utilizador
 // CUIDADO ao apagar uma aplicação desta lista!
 // É necessário apagar também da lista de aplicações da AppStore...
 
-	public Programador(String nome, int idade, int id) {
-		super(nome, idade, id);
+	public Programador(String nome, int idade) {
+		super(nome, idade);
 		this.aplicacoes = new ArrayList<>();
 	}
 	
 	public Aplicacao desenvolverAplicacao (AplicacaoTipo tipo, String nome, double preco)
 	{
-		return new Aplicacao (tipo, nome, preco, this);
+		return new Aplicacao (nome, preco, tipo, this);
 	}
 	
 	public void adicionarAplicacao (Aplicacao aplicacao)
 	{
-		aplicacoes.add.(aplicacao);
+		aplicacoes.add(aplicacao);
 	}
 	
 	public void recalcularAvaliacao()

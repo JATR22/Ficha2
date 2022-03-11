@@ -112,7 +112,7 @@ public class AppStore
 		return valorCompras;
 	}
 
-/*	@Override
+	@Override
 	public String toString() {
 		StringBuilder output = new StringBuilder ("AppStore{\n aplicações= [");
 		for (Aplicacao aplicacao : aplicacoes)
@@ -120,7 +120,7 @@ public class AppStore
 			output.append ("\n ").append(aplicacao);
 		}
 		return output + "\n ]\n}";
-	} */
+	} 
 
 	public List<Aplicacao> getAplicacoes() {
 		return aplicacoes;

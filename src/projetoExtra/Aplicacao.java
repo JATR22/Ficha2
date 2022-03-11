@@ -17,16 +17,15 @@ public class Aplicacao
 	private int numeroVendas;
 	
 	
-	public Aplicacao(String nome, double preco, float avaliacao, HashMap<Integer, Avaliacao> mapaAvaliacoes,
-			AplicacaoTipo tipo, Programador programador, int numeroVendas) 
+	public Aplicacao(String nome, double preco, AplicacaoTipo tipo, Programador programador) 
 	{
 		this.nome = nome;
 		this.preco = preco;
-		this.avaliacao = avaliacao;
 		this.mapaAvaliacoes = new HashMap<>();
 		this.tipo = tipo;
 		this.programador = programador;
-		this.numeroVendas = 0;
+		int Random = 200000;
+		this.numeroVendas = Random;
 	}
 	
 	public void avaliar (int utilizadorId, float classificacao)
@@ -68,14 +67,15 @@ public class Aplicacao
 		 return mapaAvaliacoes.values().stream().toList(); 
 	 }
 	 
-/*	 @Override
+	 @Override
 	    public String toString() {
 	        return "Aplicacao{" +
 	                "tipo=" + tipo +
 	                ", nome='" + nome +
 	                ", preco=" + preco +
 	                ", classificacao=" + avaliacao +
-	                '}'; */
+	                '}'; 
+	 }
 	 
 	   
 	public String getNome() {
